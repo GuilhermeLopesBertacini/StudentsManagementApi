@@ -1,4 +1,4 @@
-namespace StudentsManagement.Domain.Entities
+namespace StudentsManagement.Business.Entities
 {
   public class Student
   {
@@ -7,6 +7,6 @@ namespace StudentsManagement.Domain.Entities
     public string LastName { get; private set; }
     public string Email { get; private set; }
     public Guid CourseId { get; private set;}
-    // public Course Course { get; private set; }
+    public Course Course { get; private set; }
   }
 }
