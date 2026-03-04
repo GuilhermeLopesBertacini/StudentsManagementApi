@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using FluentValidation.AspNetCore;
-using StudentsManagement.Infraestructure.Persistence;
+using StudentsManagement.Infraestructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

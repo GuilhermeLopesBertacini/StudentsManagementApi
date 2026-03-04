@@ -4,7 +4,7 @@ namespace StudentsManagement.Business.Entities
     {
         public Guid CourseId { get; set; }
         public Guid SubjectId { get; set; }
-        public Course Course { get; set; }
-        public Subject Subject { get; set; }
+        public Course Course { get; }
+        public Subject Subject { get; }
     }
 }
