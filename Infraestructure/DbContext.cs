@@ -49,6 +49,8 @@ namespace StudentsManagement.Infraestructure
       {
         cs.ToTable("tb_course_subject");
 
+        cs.HasKey(cs => new { cs.CourseId, cs.SubjectId });
+
         cs.HasOne(cs => cs.Course)
           .WithMany(c => c.CourseSubjects)
           .HasForeignKey(cs => cs.CourseId);
